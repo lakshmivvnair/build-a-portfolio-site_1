@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    	<meta name="description" content="Udacity Front End Project 1 - Portfolio Website">
+    	<meta name="author" content="Lakshmi Vineeth">
+		<title>Lakshmi Portfolio</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/flex.css">
+		<link href="http://fonts.googleapis.com/css?family=Lato:100,300%7CLobster" rel="stylesheet">
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+
+	<body class="container">
+
+		<!-- Modal for Project 1 -->
+		<aside>
+			<section class="modal fade" id="prj1" tabindex="-1" role="dialog" aria-labelledby="prjOneLbl" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="prjOneLbl">Graffiti Amsterdam</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="images/graffiti_100x100.jpg" alt="gandhi graffiti amsterdam">
+			        	Gandhi in Amsterdam
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+			<!-- Modal for Project 2 -->
+			<section class="modal fade" id="prj2" tabindex="-1" role="dialog" aria-labelledby="prjTwoLbl" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="prjTwoLbl">Sree Padmanabhaswamy temple</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="images/tvm_100x100.jpg" alt="trivandrum temple">
+			        	Ancient kerala temple.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+
+			<!-- Modal for Project 3 -->
+			<section class="modal fade" id="prj3" tabindex="-1" role="dialog" aria-labelledby="prjThreeLbl" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h4 class="modal-title" id="prjThreeLbl">NYC Skyline</h4>
+			      </div>
+			      <div class="modal-body">
+			        <img class="img-responsive" src="images/nyc_100x100.jpg" alt="nyc skyline clouds">
+			        	NYC Skyline
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</section>
+		</aside>
+
+		<!-- Page Layout Begins -->
+		<header class="row">
+			<div class="col-md-6 col-xs-4 col-sm-1">
+				<div class="logo logo-effect header-super">
+					Lv
+				</div>
+			</div>
+			<div class="col-md-6 col-xs-8 col-sm-11 text-uppercase text-right">
+				<h1 class="header-super">Lakshmi Vineeth</h1>
+				<h4 class="subtitle">Udacious Developer</h4>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 flex_quotes">
+		          <div class="box seafoam we_are">We are what we repeatedly do,</div>
+			      <div class="box orange_white excl">Excellence</div>
+			      <div class="box dark_blue atti">Attitude</div>
+			      <div class="box light_blue habit">Habit</div>
+			      <div class="box dark_yellow skill">skill</div>
+			      <div class="box dark_yellow act">Act</div>
+			      <div class="box lime then">then</div>
+			      <div class="box green is_not">is not a</div>
+			      <div class="box green is_not_an">is not an</div>
+			      <div class="box red its_an">its an</div>
+			      <div class="box red its_a">its a</div>
+			      <div class="box yellow is_a">is a</div>
+			</div>
+		</div>
+		<main class="row">
+			<article>
+				<header class="col-md-12 strong">
+					<h2>Featured Work</h2>
+				</header>
+				<!-- TODO:
+				1. Create Coverflow type view for multiple prjs - discard modals?
+				2. Add/test art direction -->
+				<div class="row text-center">
+					<article class="col-md-4 col-sm-6">
+						<figure>
+							<img class="img-responsive" src="images/graffiti_500w.jpg"
+					      	data-toggle="modal" data-target="#prj1" alt="gandhi graffiti amsterdam">
+						</figure>
+						<h3 class="text-uppercase">Project One</h3>
+						<p><a href="#">https://www.github.com/amsterdam</a></p>
+					</article>
+					<article class="col-md-4 col-sm-6">
+						<figure>
+							<img class="img-responsive" src="images/tvm_500w.jpg"
+					      	data-toggle="modal" data-target="#prj2" alt="trivandrum temple">
+						</figure>
+						<h3 class="text-uppercase">Project Two</h3>
+						<p><a href="#">https://www.github.com/trivandrum</a></p>
+					</article>
+					<article class="col-md-4 col-sm-6">
+						<figure>
+							<img class="img-responsive" src="images/nyc_500w.jpg"
+					      	data-toggle="modal" data-target="#prj3" alt="nyc skyline clouds">
+						</figure>
+						<h3 class="text-uppercase">Project Three</h3>
+						<p><a href="#">https://www.github.com/newyork</a></p>
+					</article>
+				</div>
+			</article>
+		</main>
+		<hr>
+		<footer class="row text-center">
+			<div class="col-md-4">
+				<a class="zocial-twitter" href="#">Twitter</a>
+			</div>
+			<div class="col-md-4">
+				<a class="zocial-googleplus" href="#">Google+</a>
+			</div>
+			<div class="col-md-4">
+				<address>Contact : <a href="#">Lakshmi Vineeth</a></address>
+			</div>
+		</footer>
+	</body>
+</html>

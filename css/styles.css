@@ -1,0 +1,83 @@
+/*This is the stylesheet to make changes on top of Bootstrap default */
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #046380;
+	font-weight: 300;
+}
+
+/* To responsively change Logo and Header sizes */
+@media screen and (max-width: 450px){
+	.header-super {
+		font-size: 25px;
+	}
+	.subtitle{
+		font-size: 14px;
+	}
+	.logo {
+		width: 70px;
+	    height: 70px;
+	    font-size: 45px;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 1169px){
+	.header-super {
+		font-size: 50px;
+	}
+	.subtitle {
+		font-size: 16px;
+	}
+	.logo {
+		width: 80px;
+	    height: 80px;
+	    font-size: 53px;
+	}
+}
+
+@media screen and (min-width: 1170px){
+	.header-super {
+		font-size: 60px;
+	}
+	.logo {
+		width: 100px;
+	    height: 100px;
+	    font-size: 60px;
+	}
+}
+
+.logo-effect {
+		text-align: center;
+	    font-family: 'Lobster', cursive;
+	    color: #f8981c;
+	    border-radius: 20px;
+	    vertical-align: middle;
+	    margin-top: 20px;
+    	box-shadow: 5px 5px 25px 1px #046380;
+}
+
+.inline{
+	display: inline;
+}
+
+h2{
+  margin-bottom: 20px;
+}
+
+hr {
+	border-top: 3px solid #e6e2af;
+	margin-bottom: 20px;
+}
+figure{
+	margin: 0;
+}
+footer{
+	margin-bottom: 20px;
+}

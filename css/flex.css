@@ -1,0 +1,128 @@
+/* This file to modify flexbox look in place main image*/
+
+/* Container flexbox */
+.flex_quotes {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lobster', sans-serif;
+}
+.box {
+	width: 100%;
+	text-align: center;
+}
+
+/* Colors used */
+.dark_blue {
+	background-color: #2a457a;
+	color: #efefef;
+}
+.light_blue {
+	background-color: #099dd9;
+	color: #efefef;
+}
+.green {
+	background-color: #00a388;
+}
+.lime {
+	background-color: rgb(179, 210, 52);
+}
+.seafoam {
+	background-color: #ffb03b;
+}
+.red {
+	background-color: #e20000;
+}
+.orange_white {
+	background-color: #ff6138;
+	color: #efefef;
+}
+.yellow {
+	background-color: #ffff9d;
+}
+.dark_yellow{
+	background-color: #ffb03b;
+}
+
+/*. TODO: bring the text in center for these divs
+then, .we_are, .is_not, .its_an, .is_not_an, .its_a, .is_a {}*/
+
+
+@media screen and (max-width: 500px) {
+.then, .we_are, .skill, .is_not,.its_an, .atti, .act, .is_not_an, .its_a{
+	 display: none;
+}
+.excl, .habit {
+  width: 40%;
+   font-size: 2em;
+}
+.is_a{
+  width: 20%;
+  padding-top: .3em;
+  font-size: 1.5em;
+  order:0;
+}
+.excl{order:-1;}
+.habit{order: 1;}
+}
+
+@media screen and (min-width: 501px) and (max-width: 969px){
+.we_are, .then, .habit, .is_a, .act, .is_not_an, .its_a {
+	display: none;
+}
+.excl {
+	width: 100%;
+	font-size: 3em;
+	order: -1;
+}
+.is_not {
+	width: 25%;
+	font-size: 2em;
+	order: 0;
+}
+.skill {
+	width: 75%;
+	font-size: 2.75em;
+	order: 1;
+}
+.its_an {
+	width: 20%;
+	font-size: 2em;
+	order: 2;
+}
+.atti {
+	width: 80%;
+	font-size: 3em;
+	order: 3;
+}
+}
+
+@media screen and (min-width: 970px){
+	.flex_quotes {
+		font-size: 1.5em;
+	}
+	.atti, .skill, .is_a, .is_not, .its_an{
+	display: none;
+	}
+	.then, .act, .is_not_an {
+	width: 33.33%;
+	}
+	.its_a {
+	width: 25%;
+	}
+	.habit{
+	width: 75%;
+	}
+	.we_are, .act {
+		font-size: 2em;
+	}
+	.excl, .habit{
+	font-size: 3.5em;
+	}
+	.we_are { order: -1;}
+	.excl { order: 0;}
+	.then {order: 1;}
+	.is_not_an {order:2;}
+	.act {order: 3;}
+	.its_a {order: 4;}
+	.habit {order:5;}
+}
